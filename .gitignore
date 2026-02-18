@@ -6,8 +6,6 @@ node_modules
 .pnp.js
 
 # Local env files
-.env
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -17,6 +15,10 @@ coverage
 
 # Turbo
 .turbo
+
+# Supabase local state
+supabase/.branches/
+supabase/.temp/
 
 # Vercel
 .vercel
@@ -37,3 +39,4 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+config.bat
