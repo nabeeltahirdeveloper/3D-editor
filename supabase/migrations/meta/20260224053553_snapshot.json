@@ -1,6 +1,6 @@
 {
-  "id": "65aa76b8-b827-4be8-a6ec-2017ad309dd9",
-  "prevId": "57bff2fc-7d82-473b-afdb-2dd34f7a2696",
+  "id": "709551b6-3bd6-4cc4-bf0f-683ccc08b2b9",
+  "prevId": "65aa76b8-b827-4be8-a6ec-2017ad309dd9",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -304,6 +304,19 @@
           "primaryKey": false,
           "notNull": false
         },
+        "youtube_url": {
+          "name": "youtube_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "email_notifications": {
+          "name": "email_notifications",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": true
+        },
         "role": {
           "name": "role",
           "type": "auth_user_roles",
@@ -468,11 +481,29 @@
           "primaryKey": false,
           "notNull": false
         },
+        "project_id": {
+          "name": "project_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
         "message": {
           "name": "message",
           "type": "text",
           "primaryKey": false,
           "notNull": true
+        },
+        "images": {
+          "name": "images",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "scene_graph": {
+          "name": "scene_graph",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
         },
         "created_at": {
           "name": "created_at",
